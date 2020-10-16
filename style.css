@@ -1,0 +1,37 @@
+body{
+    background-color: #333;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.animated-background {
+  
+  background: url("text-bg.png");
+  font-size: 6rem;
+  background-repeat: no-repeat;
+  display: inline;
+
+  animation: moveBg 20s 1s infinite linear;
+  -webkit-animation: moveBg 90s 1s infinite linear;
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+
+}
+
+
+@keyframes moveBg{
+    0%{
+        background-position: top left;
+    }
+    100%{
+        background-position: bottom right;
+    }
+}
+
